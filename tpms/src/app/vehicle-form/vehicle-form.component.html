@@ -1,4 +1,4 @@
-<form>
+<form align="center">
     <div class="form-group">
         <h1>Vehicle category</h1>
         <input class="form-control" type="radio" name="inlineRadioOptions" id="Passenger" value="option1">
@@ -44,8 +44,9 @@
     </div>
     <h1>Registraion Number</h1>
     <div class="form-group">
-    <label for="Registraton Number"></label>
-    <input id="Registraion Number" type="text" class="form-control">
+    <label for="RegistratonNumber"></label>
+    <input id="RegistraionNumber" name="RegistraionNumber" [(ngModel)]="RegistrationNumber" required type="text" 
+              class="form-control" #RegistrationNumberControl>
   </div>
   <h1>Status</h1>
   <div class="form-check">
@@ -60,4 +61,5 @@
       Booked
     </label>
   </div>
+  <button onclick="Reserved">Submit</button>
 </form>
